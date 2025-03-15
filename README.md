@@ -48,6 +48,10 @@ pip install -r requirements.txt
 # 1. Download from https://graphviz.gitlab.io/download/
 # 2. Add to PATH environment variable
 # 3. Install Python bindings
+# or use this command for installing Graphviz via Chocolatey
+choco install graphviz
+
+# Install pydot for Python
 pip install pydot
 ```
 
@@ -85,6 +89,7 @@ Project/
 ├── config.py                 # Configuration settings
 ├── create_input.py           # Data preprocessing script
 └── README.md                 # Project documentation
+└── requirements.txt          # Project dependencies
 ```
 
 ## Data Preparation
@@ -149,7 +154,6 @@ model_config = {
     "num_neuron": 64,              # Hidden layer neurons
     "epochs": 100,                 # Training epochs
     "geointerpolation": "co_attention_multi", # Interpolation method
-    # Add more parameters as needed
 }
 ```
 
